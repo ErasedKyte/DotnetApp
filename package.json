@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@angular/cli": "^14.2.13",
+    "bootstrap": "^5.3.3",
+    "font-awesome": "^4.7.0",
+    "ngx-bootstrap": "^19.0.2"
+  }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\udemy\\DotnetProject\\MyApp\\API\\API.csproj": {}
+    "D:\\udemy\\DotnetProject\\myapp\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\udemy\\DotnetProject\\MyApp\\API\\API.csproj": {
+    "D:\\udemy\\DotnetProject\\myapp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\udemy\\DotnetProject\\MyApp\\API\\API.csproj",
+        "projectUniqueName": "D:\\udemy\\DotnetProject\\myapp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\udemy\\DotnetProject\\MyApp\\API\\API.csproj",
+        "projectPath": "D:\\udemy\\DotnetProject\\myapp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-        "outputPath": "D:\\udemy\\DotnetProject\\MyApp\\API\\obj\\",
+        "outputPath": "D:\\udemy\\DotnetProject\\myapp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gigabyte\\AppData\\Roaming\\NuGet\\NuGet.Config"
