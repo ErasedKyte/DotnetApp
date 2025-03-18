@@ -1,0 +1,75 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header text-center">
+          <h3>Register</h3>
+        </div>
+        <div class="card-body">
+          <form
+            #RegisterForm="ngForm"
+            (ngSubmit)="register()"
+            autocomplete="off"
+          >
+            <div class="form-group mb-3">
+              <label>Username</label>
+              <input
+                name="username"
+                [(ngModel)]="model.username"
+                class="form-control me-2"
+                type="username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="mt-3">
+              <label>Who is your favourite user?</label>
+              <select>
+                <option
+                  *ngFor="let user of usersFromHomeComponent"
+                  [value]="user.username"
+                >
+                  {{ user.username }}
+                </option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label>Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                [(ngModel)]="model.password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                name="password"
+                [(ngModel)]="model.password"
+                class="form-control me-2"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-check mb-3">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="terms"
+                required
+              />
+              <label class="form-check-label" for="terms"
+                >I agree to the terms and conditions</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
