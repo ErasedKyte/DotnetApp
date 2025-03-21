@@ -19,7 +19,7 @@ export class NavbarComponent {
         console.log(response)
         window.location.reload();
       },
-      error: error => console.log(error)
+      error: error => alert("The Email and Password doesnt match!")
     })
   }
 

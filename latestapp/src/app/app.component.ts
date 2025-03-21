@@ -10,7 +10,7 @@ import { Observable, of } from 'rxjs';
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
-  title = 'nigger';
+  title = 'OK';
   users: any;
   currentUser$: Observable<User | null> = of(null)
 

@@ -21,17 +21,6 @@
                 placeholder="Username"
               />
             </div>
-            <div class="mt-3">
-              <label>Who is your favourite user?</label>
-              <select>
-                <option
-                  *ngFor="let user of usersFromHomeComponent"
-                  [value]="user.username"
-                >
-                  {{ user.username }}
-                </option>
-              </select>
-            </div>
             <div class="form-group mb-3">
               <label>Password</label>
               <input
@@ -46,7 +35,7 @@
             <div class="form-group mb-3">
               <label for="confirmPassword">Confirm Password</label>
               <input
-                name="password"
+                name="Confirm password"
                 [(ngModel)]="model.password"
                 class="form-control me-2"
                 type="password"
@@ -64,9 +53,27 @@
                 >I agree to the terms and conditions</label
               >
             </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Register
-            </button>
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-4">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block justify-content-center"
+                  >
+                    Register
+                  </button>
+                </div>
+                <div class="col-4">
+                    <button
+                    class="btn btn-danger btn-block justify-content-center"
+                    (click)="cancel()"
+                    type="button"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
